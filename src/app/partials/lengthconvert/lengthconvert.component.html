@@ -1,0 +1,25 @@
+<label>
+    <span>Meter</span>
+    <input type="number" [(ngModel)]="meter" (input)="convertToImperial()">
+</label>
+<label>
+    <span>Centimeter</span>
+    <input type="number" [(ngModel)]="cMeter" (input)="convertToImperial()">
+</label>
+<label>
+    <span>Millimeter</span>
+    <input type="number" [(ngModel)]="mMeter" (input)="convertToImperial()">
+</label>
+<br>
+<label>
+    <span>Mile</span>
+    <input type="number" [(ngModel)]="mile" readonly>
+</label>
+<label>
+    <span>Feet</span>
+    <input type="number" [(ngModel)]="feet" readonly>
+</label>
+<label>
+    <span>Inch</span>
+    <input type="number" [(ngModel)]="inch" readonly>
+</label>

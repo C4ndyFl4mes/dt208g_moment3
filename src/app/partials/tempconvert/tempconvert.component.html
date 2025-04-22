@@ -1,0 +1,12 @@
+<label>
+    <span>Celsius [°C]</span>
+    <input type="number" [(ngModel)]="celsius" (input)="convertFromC()" />
+</label>
+<label>
+    <span>Fahrenheit [°F]</span>
+    <input type="number" [(ngModel)]="fahrenheit" (input)="convertFromF()" />
+</label>
+<label>
+    <span>Kelvin [K]</span>
+    <input type="number" [(ngModel)]="kelvin" (input)="convertFromK()" />
+</label>

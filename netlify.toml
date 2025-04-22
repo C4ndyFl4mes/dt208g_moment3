@@ -1,5 +1,5 @@
 [build]
-  publish = "dist/your-project-name"
+  publish = "dist/dt208g_moment3/browser"
   command = "ng build --configuration production"
 
 [[redirects]]

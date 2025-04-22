@@ -1,59 +1,18 @@
-# Dt208gMoment3
+# DT208g - Moment3
+Den här webbplatsen har gjorts med Angular v19.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
-
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Komponenter
+### Pages
+#### Startsidan
+Startsidan har enbart en h2-rubrik och en AVIF bild på en bäck i skogen vid stugan. Jag hade tänkt försöka använda Angular optimering, men det verkade som man ändå själv måste hålla på med olika bilder. Det slutade med att jag bara gjorde en AVIF då det inte står i uppgiften att vi ska optimera någonting.
+#### Konvertera
+Konverteringssidan har en h2-rubrik, två div-element med klassen conversion-container. Inuti dessa två divar "kallas" en var sin komponent, mer om det i partials nedan.
+#### Om
+Om har en h2-rubrik och två article-element som beskriver arbetet och slutsatsen.
+### Partials
+#### Meny
+En komponent som alla undersidor har är den för menyn. Menyn har länkar och beroende på skärmstorlek syns den direkt och på små skärmar måste man klicka på en knapp för en rullgardinsmeny.
+#### Tempconvert
+En komponent som hanterar tre inmatningsfält: Celsius, Fahrenheit och Kelvin och konverterar dem till varandra. Kan bli lite fel då de avrundas precis innan de visas i inmatningsfältet.
+#### Lengthconvert
+En komponent som hanterar sex inmatningsfält: Meter, Centimeter, Millimieter, Mile, Feet och Inch. Jag gjorde så att det enbart konverteras från SI till IU och inte tvärsom, IU-fälten är readonly.

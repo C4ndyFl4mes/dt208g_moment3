@@ -1,0 +1,16 @@
+<div class="navigation-container">
+    <button (click)="toggleMenu()" class="button">Meny</button>
+    <nav #menuNAV>
+        <ul>
+            <li>
+                <a routerLink="/start" routerLinkActive="active" (click)="delay()">Startsidan</a>
+            </li>
+            <li>
+                <a routerLink="/convert" routerLinkActive="active" (click)="delay()">Konvertera</a>
+            </li>
+            <li>
+                <a routerLink="/about" routerLinkActive="active" (click)="delay()">Om</a>
+            </li>
+        </ul>
+    </nav>
+</div>
